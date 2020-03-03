@@ -4,6 +4,22 @@ import java.util.Scanner;
 class DemoList
 {
     ArrayList<Integer> ar=new ArrayList<Integer>();
+    void start()
+	{
+	System.out.print("Initial List elements are");
+	ar.add(1);
+	ar.add(2);
+	ar.add(10);
+	ar.add(21);
+	ar.add(15);
+	ar.add(26);
+	ar.add(5);
+	ar.add(9);
+	ar.add(27);
+	ar.add(18);
+	System.out.print(ar);
+	System.out.print();
+	}
     void add(int element)
     {
         ar.add(element);
@@ -36,6 +52,7 @@ public class List
     {
         DemoList demoList=new DemoList();
         Scanner s=new Scanner(System.in);
+	demoList.start();
 	System.out.println("1:Add\n2:Get\n3:Position\n4:remove\n5:print\n6:exit");
         int ch;
         while (s.hasNext())
